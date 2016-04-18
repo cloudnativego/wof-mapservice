@@ -36,7 +36,7 @@ func initRoutes(mx *mux.Router, formatter *render.Render, repo mapRepository) {
 
 func initRepository() (repo mapRepository) {
 	appEnv, _ := cfenv.Current()
-	dbServiceURI, err := cftools.GetVCAPServiceProperty("mongodb", "url", appEnv)
+	dbServiceURI, err := cftools.GetVCAPServiceProperty("mongodb", "uri", appEnv)
 	if err != nil || dbServiceURI == "" {
 		if err != nil {
 			fmt.Printf("\nError retrieving database configuration: %v\n", err)
