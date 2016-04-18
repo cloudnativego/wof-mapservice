@@ -33,12 +33,12 @@ build:
         code: |
           godep go test -v ./service/...
 
-    #- script:
-  #      name: integration tests
-#        code: |
-#          export VCAP_SERVICES=`vcapinate -path=./integrations/vcap.yml`
-#          export VCAP_APPLICATION={}
-#          godep go test ./integrations/_test -v -race
+    - script:
+        name: integration tests
+        code: |
+          export VCAP_SERVICES=`vcapinate -path=./integrations/vcap.yml`
+          export VCAP_APPLICATION={}
+          godep go test ./integrations/_test -v -race
 
     - script:
         name: copy files to wercker output
