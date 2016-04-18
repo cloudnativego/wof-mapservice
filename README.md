@@ -3,3 +3,11 @@
 # World of FluxCraft - Map Service
 
 This service exposes a RESTful API for the storage and retrieval of maps that can be used for individual games of World of FluxCraft.
+
+API for this service is as follows:
+
+| Resource | Method | Description |
+|---|---|---|
+| /api/maps | GET | Retrieves a list of all maps in the system, with full detail |
+| /api/maps/**(id)** | GET | Retrieves the map with the supplied **ID** |
+| /api/maps/**(id)** | PUT | Creates or Updates the map with the supplied **ID** | 
