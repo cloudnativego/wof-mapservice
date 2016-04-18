@@ -5,6 +5,10 @@
 
 # Folders
 _obj
+_temp
+_projects
+_cache
+_builds
 
 # Architecture specific extensions/prefixes
 *.[568vq]
