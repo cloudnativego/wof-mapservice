@@ -21,11 +21,12 @@ type MapMetadata struct {
 
 // MapTile represents an individual tile within a map
 type MapTile struct {
-	ID         string `json:"id"`
-	Sprite     string `json:"sprite"`
-	AllowUp    bool   `json:"allow_up"`
-	AllowDown  bool   `json:"allow_down"`
-	AllowLeft  bool   `json:"allow_left"`
-	AllowRight bool   `json:"allow_right"`
-	TileName   string `json:"tile_name"`
+	ID          string `json:"id"`
+	Sprite      string `json:"sprite"`
+	AllowUp     bool   `json:"allow_up"`
+	AllowDown   bool   `json:"allow_down"`
+	AllowLeft   bool   `json:"allow_left"`
+	AllowRight  bool   `json:"allow_right"`
+	Traversable bool   `json:"traversable"`
+	TileName    string `json:"tile_name"`
 }
